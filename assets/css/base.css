@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+.login{
+	background: rgb(6,96,113);
+	background: linear-gradient(180deg, rgba(6,96,113,1) 0%, rgba(40,156,180,1) 61%, rgba(109,223,246,1) 100%) repeat-x;
+	height: auto;
+	min-height: 100vh;
+}
+.login .formulario{
+    max-width: 350px;
+    margin: 0 auto;
+}
+.login .formulario .user{
+    margin: 0 auto;
+    display: inherit;
+}
