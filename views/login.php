@@ -8,17 +8,33 @@
                     <img src="<?= site_url(); ?>/assets/img/user-form.png" alt="" class="user">
                     <form action="" method="post">
                         <div class="form-group">
-                            <label for="nome"><img src="<?= site_url(); ?>/assets/img/icon-user.png" alt="" ></label>
-                            <input  class="control" type="text" placeholder="Digite seu nome" name="nome" value="<?php echo (isset($auterar)) ?  $auterar['nome'] : '' ?>" id="nome">
+                            <label for="nomeLogin" class="label-icon">
+                                <span class="icon-form">
+                                    <img src="<?= site_url(); ?>/assets/img/icon-user.png" alt="" >
+                                </span>
+                            </label>
+                            <input  class="control" type="text" placeholder="Digite seu usuário" name="nomeLogin"  id="nomeLogin">
                         </div>
                     
                         <div class="form-group">
-                            <label for="email"><img src="<?= site_url(); ?>/assets/img/icon-senha.png" alt="" ></label>
-                            <input class="control" type="email"  placeholder="Digite seu e-mail" name="email"  value="<?php echo (isset($auterar)) ?  $auterar['email'] : '' ?>"id="email">
+                            <label for="senhaLogin" class="label-icon">
+                                <span class="icon-form">
+                                    <img src="<?= site_url(); ?>/assets/img/icon-senha.png" alt="" >
+                                </span>
+                            </label>
+                            <input class="control" type="password"  placeholder="Digite seu senha" name="senhaLogin"  id="senhaLogin">
                         </div>
-                        <input type="submit" class="btn btn-dark btn-submit " id="submit"  value="<?php echo (isset($auterar)) ?  "Atualizar"  : "Cadastrar" ?>" >
+                        <div class="custom-control custom-checkbox check-left">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Remember me</label>
+                        </div>
+                        <input type="submit" class="btn btn-dark btn-submit btn-login " id="submit"  value="LOGIN" >
 
                     </form>
+
+                    <div class="cadastro">
+                        <p>Não possui uma conta? <a href="<?= site_url(); ?>/views/registrar.php">Inscrever-se</a></p>
+                    </div>
                 </div>
             </div>
         </div>

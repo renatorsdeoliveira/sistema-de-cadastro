@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -6,6 +7,8 @@
 	box-sizing: border-box;
 	outline: none;
 }
+
+/*---- TELAS DE CADASTRO INICIO -------*/
 .login{
 	background: rgb(6,96,113);
 	background: linear-gradient(180deg, rgba(6,96,113,1) 0%, rgba(40,156,180,1) 61%, rgba(109,223,246,1) 100%) repeat-x;
@@ -14,9 +17,76 @@
 }
 .login .formulario{
     max-width: 350px;
-    margin: 0 auto;
+	margin: 0 auto;
+	margin-top: 90px;
 }
 .login .formulario .user{
     margin: 0 auto;
-    display: inherit;
+	display: inherit;
+	margin-bottom: 25px;
 }
+.login .formulario .label-icon{
+	color: #ffffff;
+	font-weight: 500;
+	width: 12%;
+	margin-bottom: 0;
+	float: left;
+	background-color: #343a40;
+	min-height: 38px;
+	text-align: center;
+	border-radius:.30rem  0rem 0rem .30rem;
+}
+.login .formulario .icon-form {
+    margin: 0 auto;
+	display: block;
+}
+.login .formulario .icon-form img,
+.login .formulario .icon-form i
+{
+	padding: 9px 0px 9px 0;
+	
+}
+.login .formulario .icon-form i{
+	color:#9fa1a3;
+	font-size: 19px;
+}
+.login .formulario label{
+	color: #ffffff;
+}
+.login .formulario label > a{
+	color: #343a40;
+}
+.login .formulario .control{
+	display: block;
+    width: 88%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0rem .30rem .30rem 0rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.login .formulario .check-left{
+	margin-left: 8px;
+}
+.login .formulario .btn-login{
+	display: block;
+	margin: 35px auto 0;
+	width: 40%;
+}
+.login .cadastro{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 15px;
+	text-align: center;
+	margin-top: 40px;
+}
+.login .cadastro p{
+	color: #ffffff;
+}
+.login .cadastro p > a{
+	color: #343a40;
+}
+/*---- TELAS DE CADASTRO FIM -------*/
