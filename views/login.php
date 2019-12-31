@@ -1,16 +1,16 @@
 <?php require_once('../conteudo-fixo/header.php') ;?>
 
-<div class="login">
+<div class="login fundo-degrade">
     <div class="container-fluid">
         <div class="row">
             <div class="col">
                 <div class="formulario">
-                    <img src="<?= site_url(); ?>/assets/img/user-form.png" alt="" class="user">
+                    <img src="<?= site_url(); ?>/assets/images/user-form.png" alt="" class="user">
                     <form action="" method="post">
                         <div class="form-group">
                             <label for="nomeLogin" class="label-icon">
                                 <span class="icon-form">
-                                    <img src="<?= site_url(); ?>/assets/img/icon-user.png" alt="" >
+                                    <img src="<?= site_url(); ?>/assets/images/icon-user.png" alt="" >
                                 </span>
                             </label>
                             <input  class="control" type="text" placeholder="Digite seu usuário" name="nomeLogin"  id="nomeLogin">
@@ -19,7 +19,7 @@
                         <div class="form-group">
                             <label for="senhaLogin" class="label-icon">
                                 <span class="icon-form">
-                                    <img src="<?= site_url(); ?>/assets/img/icon-senha.png" alt="" >
+                                    <img src="<?= site_url(); ?>/assets/images/icon-senha.png" alt="" >
                                 </span>
                             </label>
                             <input class="control" type="password"  placeholder="Digite seu senha" name="senhaLogin"  id="senhaLogin">
@@ -33,7 +33,7 @@
                     </form>
 
                     <div class="cadastro">
-                        <p>Não possui uma conta? <a href="<?= site_url(); ?>/views/registrar.php">Inscrever-se</a></p>
+                        <p>Não possui uma conta? <a href="<?= site_url(); ?>/views/cadastrar.php">Inscrever-se</a></p>
                     </div>
                 </div>
             </div>

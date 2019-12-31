@@ -1,11 +1,11 @@
 <?php require_once('../conteudo-fixo/header.php') ;?>
 
-<div class="login">
+<div class="cadastrar fundo-degrade">
     <div class="container-fluid">
         <div class="row">
             <div class="col">
                 <div class="formulario">
-                    <img src="<?= site_url(); ?>/assets/img/user-form.png" alt="" class="user">
+                    <img src="<?= site_url(); ?>/assets/images/user-form.png" alt="" class="user">
                     <form action="" method="post">
                         <div class="form-group">
                             <label for="emailCadastro" class="label-icon">
@@ -19,7 +19,7 @@
                         <div class="form-group">
                             <label for="usuarioCadastro" class="label-icon">
                                 <span class="icon-form">
-                                    <img src="<?= site_url(); ?>/assets/img/icon-user.png" alt="" >
+                                    <img src="<?= site_url(); ?>/assets/images/icon-user.png" alt="" >
                                 </span>
                             </label>
                             <input class="control" type="text"  placeholder="Usuário" name="usuarioCadastro"  id="usuarioCadastro">
@@ -27,7 +27,7 @@
                         <div class="form-group">
                             <label for="senhaCadastro" class="label-icon">
                                 <span class="icon-form">
-                                    <img src="<?= site_url(); ?>/assets/img/icon-senha.png" alt="" >
+                                    <img src="<?= site_url(); ?>/assets/images/icon-senha.png" alt="" >
                                 </span>
                             </label>
                             <input class="control" type="password"  placeholder="Senha" name="senhaCadastro"  id="senhaCadastro">
