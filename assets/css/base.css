@@ -99,6 +99,8 @@
     border: 2px solid #ced4da;
     border-radius: .30rem ;
 	padding: .65rem .75rem;
+	margin-bottom: 60px;
+    margin-top: 30px;
 }
 .formuario-pesquisa input[type=text]{
 	background: 0 0;
@@ -115,20 +117,88 @@
 	padding: 0;
 	background-color: transparent;
 }
-.img-circle{
+.add-cliente{
+	margin-bottom: 15px;
+}
+.add-cliente .titulo-clientes{
+	font-size: 30px;
+    font-weight: 300;
+}
+.add-cliente .btnNovoCliente{
+	float: right;
+	box-shadow: none;
+}
+.tabela-clientes{
+	margin-bottom: 50px;
+}
+.tabela-clientes .img-circle{
 	height: 32px;
 	width: 32px;
 	border-radius: 50%;
 }
-.checkbox {
-
+.tabela-clientes .checkbox {
     vertical-align: middle;
     display: inline-block;
-
-	margin-left: 20px;
-	
 }
-.checkbox .custom-control-label::after{
+.tabela-clientes .checkbox .custom-control-label::after{
 	border: 1px solid #cccccc;
 	border-radius: 3px;
+}
+.tabela-clientes .bg-drop{
+	border: 0;	
+}
+.tabela-clientes .bg-drop::after{
+	margin-left: 0;
+	color: #ced4da;
+}
+.tabela-clientes tbody,
+.tabela-clientes tbody a{
+	color: #797979;
+}
+.tabela-clientes tbody a:hover{
+	color: #797979;
+	text-decoration: none;
+}
+.tabela-clientes .table-actions-bar .table-action-btn{
+	color: #98a6ad;
+    display: inline-block;
+    width: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 20px;
+}
+.tabela-clientes .table-action-btn .editar{
+	color: #28a745;
+}
+.tabela-clientes .table-action-btn .historico{
+	color: #ffc107;
+}
+.tabela-clientes .table-action-btn .fechar{
+	color: #dc3545;
+}
+.navColor .page-link{
+	color: #495057;
+	font-size: 16px;
+	border: none;
+    background-color: transparent;
+}
+.navColor .page-item.active .page-link{
+	background-color: transparent;
+	color: #007bff;
+	font-weight: 500;
+}
+.navColor .page-link:focus{
+	box-shadow: none;
+}
+.modal-clientes{
+	color: #797979;
+}
+.modal-clientes .bd-md{
+	color: #ffffff;
+}
+.modal-clientes .bd-md button.close{
+	color: #ffffff;
+	opacity: 0.8;
+	outline: transparent;
 }
