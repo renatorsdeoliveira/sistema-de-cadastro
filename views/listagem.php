@@ -140,7 +140,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="post">
+                    <form action="res.php" method="post">
                        
                         <div class="form-group">
                             <label for="nomeCliente"><strong>Nome</strong></label>
@@ -153,16 +153,17 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputTelefone1"><strong>Telefone</strong></label>
-                            <input type="text" name="telefoneCliente" class="form-control" id="exampleInputTelefone1" aria-describedby="telefoneHelp" placeholder="Digite um telefone">
+                            <input type="text" name="telefoneCliente[]" class="campoTelefone form-control campoDefault" id="exampleInputTelefone1" aria-describedby="telefoneHelp" placeholder="Digite um telefone">
+
+                            <div id="novoCampo"></div>
                             
-                            <div class="checkbox custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="novoTelefone">
-                                <label class="custom-control-label" for="novoTelefone">Adicionar mais um telefone</label>
-                            </div>
+                            <a href="#" class="btn btn-secondary btn-sm " id="btnAdicionaTelefone" >Adicionar até mais dois telefone</a>
+
+                         
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger">Fechar</button>
+                            <button type="button" class=" btn btn-danger"  data-dismiss="modal" aria-label="Close" >Fechar</button>
                             <button type="submit" class="btn btn-success">Cadastrar</button>
                             <button type="button" class="btn btn-warning" >Historico</button>
                         </div>
