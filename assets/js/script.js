@@ -20,10 +20,8 @@
 			idContador++;
 		
 			if(cont < 2){
-				cont++;
-
-				var idCampo = "campoExtra"+idContador;
 			
+				var idCampo = "campoExtra"+idContador;
 				var html = "";
 				
 				html += "<div style='margin-top: 8px;' class='input-group' id='"+idCampo+"'>";
@@ -34,6 +32,8 @@
 				html += "</div>";
 		
 				$("#novoCampo").append(html);
+				
+				cont++;
 			}
 		}
 	
