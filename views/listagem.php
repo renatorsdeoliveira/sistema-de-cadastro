@@ -1,4 +1,7 @@
-<?php require_once('../conteudo-fixo/header.php') ;?>
+<?php 
+    require_once('../conteudo-fixo/header.php') ;
+    require_once('../models/Cliente_modulo.php') ;
+?>
 
     <div class="listagem">
         <div class="container">
@@ -60,47 +63,34 @@
                             </thead>
 
                             <tbody>
-                                <tr class="active">
-                                    <td class="align-middle">
-                                        <div class="checkbox custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2"></a></label>
-                                        </div>
-                                        <!-- <img src="<?= site_url(); ?>/assets/images/users/avatar-2.jpg" alt="contact-img" title="contact-img" class="img-circle thumb-sm"> -->
-                                    </td>
-
-                                    <td class="align-middle">Tomaslau</td>
-                                    <td class="align-middle"><a href="#">zomaslau@dummy.com</a></td>
-                                    <td class="align-middle">Telefone</td>
-                                    <td class="align-middle">01/11/2003</td>
-
-                                    <td class="align-middle">
-                                        <a href="#" class="table-action-btn"><i class="md md-edit editar"></i></a>
-                                        <a href="#" class="table-action-btn"><i class="md md-history historico"></i></a>
-                                        <a href="#" class="table-action-btn"><i class="md md-close fechar"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="align-middle">
-                                        <div class="checkbox custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1"></a></label>
-                                        </div>
-                                        <!-- <img src="<?= site_url(); ?>/assets/images/users/avatar-2.jpg" alt="contact-img" title="contact-img" class="img-circle thumb-sm"> -->
-                                    </td>
+                                <?php 
+                                    $cliente = new cliente_modulo();
+                                    $resultados =  $cliente->listar();
                                     
-                                    <td class="align-middle">Tomaslau</td>
-                                    <td class="align-middle"><a href="#">zomaslau@dummy.com</a></td>
-                                    <td class="align-middle">Telefone</td>
-                                    <td class="align-middle">01/11/2003</td>
-
-                                    <td class="align-middle">
-                                        <a href="#" class="table-action-btn"><i class="md md-edit editar"></i></a>
-                                        <a href="#" class="table-action-btn"><i class="md md-history historico"></i></a>
-                                        <a href="#" class="table-action-btn"><i class="md md-close fechar"></i></a>
-                                    </td>
-                                </tr>
-                               
+                                    foreach ($resultados as $resultado) {   
+                                ?>
+                                    <tr class="active">
+                                        <td class="align-middle">
+                                            <div class="checkbox custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2"></a></label>
+                                            </div>
+                                        </td>
+                                    
+                                        <td class="align-middle"><?= $resultado['nome'] ; ?></td>
+                                        <td class="align-middle"><a href="#"><?= $resultado['email'] ; ?></a></td>
+                                        <td class="align-middle">62 9932040</td>
+                                        <?php $dataFormatada = (new DateTime($resultado['data_atualizacao']))->format('d/m/Y H:i:s');?>
+                                        <td class="align-middle"><?= $dataFormatada ; ?></td>
+                                       
+                                        <td class="align-middle">
+                                            <a href="#" class="table-action-btn"><i class="md md-edit editar"></i></a>
+                                            <a href="#" class="table-action-btn"><i class="md md-history historico"></i></a>
+                                            <a href="#" class="table-action-btn"><i class="md md-close fechar"></i></a>
+                                        </td>
+                                    </tr>
+                                
+                                <?php } ?>
                             </tbody>
                         </table>
                     </div>
@@ -140,7 +130,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="res.php" method="post">
+                    <form action="../models/Cliente_modulo.php" method="post">
                        
                         <div class="form-group">
                             <label for="nomeCliente"><strong>Nome</strong></label>
